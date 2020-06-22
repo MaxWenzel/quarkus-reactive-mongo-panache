@@ -1,0 +1,15 @@
+quarkus:
+  http:
+    port: 8082
+  hibernate-orm:
+    batch-fetch-size: 10
+  mongodb:
+    connection-string: mongodb://localhost:27017
+    database: first-test
+    credentials:
+      username: root
+      password: topSecret
+      auth-mechanism: SCRAM-SHA-1
+      auth-source: admin
+  log:
+    level: DEBUG
